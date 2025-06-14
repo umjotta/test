@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Faz com que width e height incluam padding e border */
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  display: flex;
+}
+
+.barra_lateral {
+  background-color: #0030f2;
+  border-radius: 0px 20px 20px 0px;
+  height: 100vh;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logo_barra {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 50px; /* Adiciona espaço abaixo do elemento */
+}
+#logo_barra:hover {
+  transform: scale(1.2);
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  color: #f4f4f4;
+  text-decoration: none;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.menu a:hover {
+  background-color: rgba(255, 255, 255, 0.397);
+  color: rgb(198, 201, 69);
+  padding: 1%;
+  border-radius: 20%;
+  transform: scale(1.2);
+  width: 100%;
+}
+
+.img_menu {
+  width: 60px;
+  height: 60px;
+  margin-right: 6px; /* Ajusta o espaçamento entre a imagem e o texto */
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bem-vindo {
+  margin-top: 2%;
+  margin-bottom: 111px; /* Adiciona espaço abaixo do elemento */
+}
+
+.user-icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.user-icon img:hover {
+  transform: scale(1.5);
+}
+
+
+.video-section {
+  margin-bottom: 30px;
+}
+
+.video-section h2 {
+  margin-bottom: 10px;
+}
+
+/* Container de vídeos com rolagem horizontal */
+.video-container {
+  display: flex;
+  overflow-x: auto; /* Permite rolagem horizontal */
+  gap: 10px;
+  padding-bottom: 10px;
+  scrollbar-width: thin; /* Ajusta a largura da barra de rolagem */
+  scrollbar-color: #0030f2 #ccc; /* Cor da barra de rolagem */
+}
+
+/* Estilização dos vídeos */
+.video {
+  width: calc(33.333% - 20px);
+  text-align: center;
+  margin-bottom: 7%;
+}
+
+.video-aulas {
+  width: 90%;
+  height: 200px;
+  background-color: #ccc;
+  box-shadow: 4px 4px 40px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.video-aulas:hover {
+  transform: scale(1.1);
+}
+
+/* Estilização da barra de rolagem */
+.video-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.video-container::-webkit-scrollbar-track {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.video-container::-webkit-scrollbar-thumb {
+  background: #0030f2;
+  border-radius: 10px;
+}
